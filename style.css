@@ -157,9 +157,24 @@ input[type="button"]{
     margin-top: 25px;
 }
 
+/* Destination style */
 
+.destination{
+    padding-top: 81px;
+    text-align: center;
+}
+.destination p{
+    padding: 20px 0 40px;
+    color: rgba(19, 19, 24, 0.70);
+    width: 520px;
+    margin: 0 auto;
+}
 
-
+.box1, .box2, .box3{
+    display: flex;
+    gap:20px;
+    padding-bottom: 20px;
+}
 
 
 
@@ -184,6 +199,7 @@ input[type="button"]{
     }
     .tour p, .tour ul li{
         font-size: .75rem;
+        padding: 0;
     }
     .tour h2{
         font-size: 1rem;
@@ -195,6 +211,20 @@ input[type="button"]{
         margin: 20px 0;
     }
     .tour img{
+        width: 100%;
+    }
+    .box1, .box2, .box3{
+        flex-direction: column;
+    }
+    .flex-container img{
+        height: 270px;
+    }
+    .destination p{
+        padding: 13px 0;
+        font-size: .7rem;
         width: 90%;
+    }
+    .destination h2 {
+        font-size: 1rem;
     }
 }
