@@ -11,17 +11,138 @@
 .description{
     font-size: .8rem;
     font-weight: 400;
-    color: #727272;
+    color: #5A5A5D;;
 }
 .title{
     font-size: 2rem;
-    font-weight: 700;
-    color: #131313;
-}
-.header{
-    background: rgba(255, 144, 14, 0.10);
+    font-weight: 800;
+    color: #131318;
 }
 #content-screen{
     max-width: 81%;
     margin: 0 auto;
+}
+
+/* nav style */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.logo h1{
+    font-size: 1.88rem;
+    font-weight: 800;
+    color: #131318;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0 40px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex; 
+}
+nav ul li{
+    padding-right: 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Hero style */
+
+.hero{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+    url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    padding: 85px 0;
+    margin-bottom: 81px;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+}
+.hero h1{
+    font-size: 3.2rem;
+    font-weight: 800;
+    color:#fff;
+}
+.hero p{
+    color:#fff;
+    max-width: 548px;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+    line-height: 20px;
+}
+.form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 13px;
+    max-width: 622px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap:20px;
+    align-items: center;
+}
+input, select {
+    border-radius: 8px;
+    border: 0;
+    height: 42px;
+    width: 100%;
+}
+
+input[type="text"]{
+    padding: 13px;
+}
+input[type="button"]{
+    background: #FF5400;
+    color: #ffffff;
+    cursor: pointer;
+}
+/* .search-icon{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color:#fff;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #febd68;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile responsive */
+@media screen and (max-width:600px){
+    .form{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 13px;
+        padding: 0 33px;
+    }
+    .logo h1, .hero h1{
+        font-size: 1.12rem;  
+    }
+    .hero p{
+        font-size: .7rem;
+        padding: 8px 12px 26px;
+    }
 }
