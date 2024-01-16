@@ -172,7 +172,9 @@ input[type="button"]{
     width: 520px;
     margin: 0 auto;
 }
-
+.flex-container img{
+    width: 80%;
+}
 .box1, .box2, .box3{
     display: flex;
     gap:20px;
@@ -236,9 +238,6 @@ input[type="button"]{
     color: rgba(19, 19, 24, 0.70);
     width: 520px;
     margin: 0 auto;
-}
-.card-container h2{
-    
 }
 .card-div{
     border-radius: 8px;
@@ -401,6 +400,9 @@ hr{
     .destination h2 {
         font-size: 1rem;
     }
+    .destination img{
+        width: 100%;
+    }
     .about{padding-top: 0px;}
     .about p{
         padding: 13px 0;
@@ -454,4 +456,12 @@ hr{
         padding: 20px 0 25px; 
     }
     
+}
+@media screen and (min-width:992) and (max-width: 1200){
+    .destination img{
+        width: 30%;
+    }
+    /* .flex-container img{
+        width: 464px;
+    } */
 }
