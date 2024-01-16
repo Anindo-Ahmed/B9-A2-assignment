@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 /* shared style */
 
 *{
@@ -63,6 +63,9 @@ nav ul li a{
     font-size: 1rem;
     font-weight: 400;
 }
+.icon{
+    display: none;
+}
 
 /* Hero style */
 
@@ -98,6 +101,15 @@ nav ul li a{
     column-gap:20px;
     align-items: center;
 }
+.form > div{
+    display: flex;
+    align-items: center;
+    background: #FF5400;
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
 input, select {
     border-radius: 8px;
     border: 0;
@@ -105,7 +117,7 @@ input, select {
     width: 100%;
 }
 
-input[type="text"]{
+input[type="text"], select{
     padding: 13px;
 }
 input[type="button"]{
@@ -113,20 +125,10 @@ input[type="button"]{
     color: #ffffff;
     cursor: pointer;
 }
-/* .search-icon{
-    font-size: 1.3rem;
-    font-weight: normal;
-    color:#fff;
-    height: 40px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #febd68;
-    cursor: pointer;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-} */
+.search-icon{
+    padding-left: 25px;
+}
+
 
 /* Tour section style */
 
@@ -275,21 +277,40 @@ input[type="button"]{
     transform: rotate(-20deg);
 }
 
-
-
-
-
-
-
-
 /* Footer style */
 
 .footer{
     background: rgba(19, 19, 24, 0.05);
+    padding: 90px 270px;
+    text-align: center;
+    margin-top: 81px;
+}
+.footer-div{
+    display: flex;
+    justify-content: center;
+}
+.footer-div h1{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+.footer-div img{
+    width: 33px;
+}
+.footer p{
+    width: 623px;
+    margin: 0 auto;
+    padding: 12px 0 26px;
 }
 hr{
-    width: 706px;
-    background: rgba(19, 19, 24, 0.10); 
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    width: 700px;
+    margin: 40px auto;  
+}
+.copyright{
+    font-size: .8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #131318;  
 }
 
 
@@ -305,23 +326,49 @@ hr{
     .form{
         grid-template-columns: repeat(1, 1fr);
         gap: 13px;
-        padding: 0 33px;
+        padding: 13px;
     }
+    .form > div{
+        justify-content: center;
+        gap: 5px;
+    }
+    input, select {
+        width: auto;
+    }
+    nav{
+        padding: 0px;
+    }
+    nav ul{
+        display: none; 
+    }
+    .logo{padding: 15px;}
+    .icon{display: block; font-size: 1.25rem;}
     .logo h1, .hero h1{
         font-size: 1.12rem;  
+    }
+    .hero{
+        margin-top: 15px;
+        padding: 26px 20px;
     }
     .hero p{
         font-size: .7rem;
         padding: 8px 12px 26px;
     }
-    .tour{flex-direction: column;}
-    .tour p, .tour ul li{
+    .tour{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .tour p{
         font-size: .75rem;
-        padding: 0;  
+        padding: 13px 0;  
+    }
+    .tour ul li{
+        font-size: .75rem;
+        padding-bottom: 10px 0;  
     }
     .tour h2, .about h2{font-size: 1rem;}
     .tour-pacakge{width: 100%;}
-    .tour button{margin: 20px 0;}
+    .tour button{margin-bottom: 20px;}
     .tour img{width: 100%;}
     .box1, .box2, .box3{flex-direction: column;}
     .flex-container img{height: 270px;}
@@ -334,7 +381,7 @@ hr{
     .destination h2 {
         font-size: 1rem;
     }
-    .about{padding-top: 20px;}
+    .about{padding-top: 0px;}
     .about p{
         padding: 13px 0;
         width: fit-content;  
@@ -355,6 +402,29 @@ hr{
         
         width: 270px;   
     }
+    .footer{
+        padding: 26px 36px;
+        text-align: center;
+        margin-top: 20px;
+    }
     
+    .footer-div h1{
+        font-size: 1.1rem;
+    }
+    .footer-div img{
+        width: 23px;
+    }
+    .footer p{
+        padding: 12px 36px;
+        width: fit-content;
+    }
+    hr{
+        width: 100%;
+        margin: 20px auto;  
+    }
+    .copyright{
+        font-size: .68rem;
+        padding: 20px 0 25px; 
+    }
     
 }
