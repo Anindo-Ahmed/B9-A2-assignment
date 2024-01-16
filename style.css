@@ -11,7 +11,8 @@
 .description{
     font-size: .8rem;
     font-weight: 400;
-    color: #5A5A5D;;
+    color: #5A5A5D;
+    line-height: 21px;
 }
 .title{
     font-size: 2rem;
@@ -176,12 +177,77 @@ input[type="button"]{
     padding-bottom: 20px;
 }
 
+/* About section style */
+
+.about{
+    padding-top: 81px;
+    text-align: center;
+}
+.about p{
+    padding: 20px 0 40px;
+    color: rgba(19, 19, 24, 0.70);
+    width: 520px;
+    margin: 0 auto;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    border-radius: 16px;
+    text-align: start;
+    padding: 25px;
+}
+.card-container p{
+    padding: 0;
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #131318;
+    padding: 25px 0 13px;
+}
+.base{
+    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+}
+.blue{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.pink{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    position: relative;
+    left: 50%;
+}
+
+
+
+
+
+/* Footer style */
+
+.footer{
+    background: rgba(19, 19, 24, 0.05);
+}
+hr{
+    width: 706px;
+    background: rgba(19, 19, 24, 0.10); 
+}
+
 
 
 
 
 /* Mobile responsive */
 @media screen and (max-width:600px){
+    .description{
+        font-size: .68rem;
+        line-height: 19px;
+    }
     .form{
         grid-template-columns: repeat(1, 1fr);
         gap: 13px;
@@ -199,9 +265,9 @@ input[type="button"]{
     }
     .tour p, .tour ul li{
         font-size: .75rem;
-        padding: 0;
+        padding: 0;  
     }
-    .tour h2{
+    .tour h2, .about h2{
         font-size: 1rem;
     }
     .tour-pacakge{
@@ -222,9 +288,26 @@ input[type="button"]{
     .destination p{
         padding: 13px 0;
         font-size: .7rem;
-        width: 90%;
+        width: 100%;
     }
     .destination h2 {
         font-size: 1rem;
+    }
+    .about{
+        padding-top: 20px;
+    }
+    .about p{
+        padding: 13px 0;
+        width: fit-content;  
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 13px;
+    }
+    .pink{
+        left: 0%;
+    }
+    .card-container p{
+        width: fit-content;
     }
 }
