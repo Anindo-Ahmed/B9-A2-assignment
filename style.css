@@ -27,7 +27,7 @@
     background-color: #FF5400;
     font-size: 1rem;
     font-weight: 800;
-    color: #fff;
+    color: #ffffff;
     padding: 11px 28px;
     border: 0;
     border-radius: 8px;
@@ -224,6 +224,60 @@ input[type="button"]{
     left: 50%;
 }
 
+/* Newsletter style */
+.newsletter{
+    padding-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sign-in{
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    padding: 32px;
+    width: 60%;
+}
+.sign-in h3{
+    padding: 0;
+}
+.sign-in p{
+    padding: 13px 0 20px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+.newsletter [type="text"], [type="email"]{
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 13px ; 
+}
+.newsletter .btn{
+    margin-top: 20px;
+}
+.off-img{
+    background-image: url("Images/Rectangle\ 8\ \(1\).png");
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    position: relative; 
+}
+.red{
+    background: #FF5400;
+    width: 260px;
+    padding: 30px 35px;
+    text-align: center;
+    border: 0;
+    border-radius: 16px;
+    color: #fff;
+    position: absolute;
+    right:6px;
+    bottom: 38px;
+    transform: rotate(-20deg);
+}
+
+
+
+
 
 
 
@@ -260,31 +314,18 @@ hr{
         font-size: .7rem;
         padding: 8px 12px 26px;
     }
-    .tour{
-        flex-direction: column;
-    }
+    .tour{flex-direction: column;}
     .tour p, .tour ul li{
         font-size: .75rem;
         padding: 0;  
     }
-    .tour h2, .about h2{
-        font-size: 1rem;
-    }
-    .tour-pacakge{
-        width: 100%;  
-    }
-    .tour button{
-        margin: 20px 0;
-    }
-    .tour img{
-        width: 100%;
-    }
-    .box1, .box2, .box3{
-        flex-direction: column;
-    }
-    .flex-container img{
-        height: 270px;
-    }
+    .tour h2, .about h2{font-size: 1rem;}
+    .tour-pacakge{width: 100%;}
+    .tour button{margin: 20px 0;}
+    .tour img{width: 100%;}
+    .box1, .box2, .box3{flex-direction: column;}
+    .flex-container img{height: 270px;}
+    .destination{padding-top: 20px;}
     .destination p{
         padding: 13px 0;
         font-size: .7rem;
@@ -293,9 +334,7 @@ hr{
     .destination h2 {
         font-size: 1rem;
     }
-    .about{
-        padding-top: 20px;
-    }
+    .about{padding-top: 20px;}
     .about p{
         padding: 13px 0;
         width: fit-content;  
@@ -304,10 +343,18 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         gap: 13px;
     }
-    .pink{
-        left: 0%;
+    .pink{left: 0%;}
+    .card-container p{width: fit-content;}
+    .newsletter{flex-direction: column;padding-top: 20px}
+    .sign-in{
+        padding: 20px ;
+        width: 100%;
     }
-    .card-container p{
-        width: fit-content;
+    .off-img{
+        background-image: url("Images/Rectangle\ 8\ \(1\).png");
+        
+        width: 270px;   
     }
+    
+    
 }
