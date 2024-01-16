@@ -55,7 +55,7 @@ nav ul{
     display: flex; 
 }
 nav ul li{
-    padding-right: 35px;
+    padding-left: 35px;
 }
 nav ul li a{
     text-decoration: none;
@@ -169,16 +169,76 @@ input[type="button"]{
 .destination p{
     padding: 20px 0 40px;
     color: rgba(19, 19, 24, 0.70);
-    width: 520px;
+    max-width: 520px;
     margin: 0 auto;
-}
-.flex-container img{
-    width: 80%;
 }
 .box1, .box2, .box3{
     display: flex;
+    justify-content: center;
     gap:20px;
     padding-bottom: 20px;
+    position: relative;
+}
+.box1 img, .box2 img, .box3 img{
+    width: 100%;
+}
+
+
+.Maldives{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.Indonesia{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.Srilanka{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.North-America{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.Kashmir{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.Bangladesh{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 1.4rem;
+    font-weight: 800;   
+}
+.Bandarban{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    font-size: 1.4rem;
+    font-weight: 800;   
 }
 
 /* About section style */
@@ -190,7 +250,7 @@ input[type="button"]{
 .about p{
     padding: 20px 0 40px;
     color: rgba(19, 19, 24, 0.70);
-    width: 520px;
+    max-width: 520px;
     margin: 0 auto;
 }
 .card-container{
@@ -226,6 +286,7 @@ input[type="button"]{
     background: rgba(233, 68, 68, 0.05);
     position: relative;
     left: 50%;
+    right: 50%;
 }
 /* card style */
 .cards{
@@ -236,7 +297,7 @@ input[type="button"]{
 .cards p{
     padding: 20px 0 40px;
     color: rgba(19, 19, 24, 0.70);
-    width: 520px;
+    max-width: 520px;
     margin: 0 auto;
 }
 .card-div{
@@ -313,16 +374,16 @@ input[type="button"]{
     font-weight: 800;
 }
 .footer-div img{
-    width: 33px;
+    max-width: 33px;
 }
 .footer p{
-    width: 623px;
+    max-width: 623px;
     margin: 0 auto;
     padding: 12px 0 26px;
 }
 hr{
     border-bottom: 1px solid rgba(19, 19, 24, 0.10);
-    width: 700px;
+    max-width: 700px;
     margin: 40px auto;  
 }
 .copyright{
@@ -455,13 +516,75 @@ hr{
         font-size: .68rem;
         padding: 20px 0 25px; 
     }
+    .Maldives{
+        top: 27%;
+        left: 42%;
+        font-size: 1rem;  
+    }
+    .Indonesia{
+        top: 73%;
+        right: 43%;
+        font-size: 1rem;  
+    }
+    .Srilanka{
+        top: 17%;
+        left: 40%;
+        font-size: 1rem;  
+    }
+    .North-America{
+        top: 50%;
+        left: 38%;
+        font-size: 1rem;  
+    }
+    .Kashmir{
+        top: 81%;
+        right: 45%;
+        font-size: 1rem;  
+    }
+    .Bangladesh{
+        top: 25%;
+        left: 40%;
+        font-size: 1rem;  
+    }
+    .Bandarban{
+        top: 75%;
+        left: 40%;
+        font-size: 1rem;  
+    }
     
 }
-@media screen and (min-width:992) and (max-width: 1200){
-    .destination img{
-        width: 30%;
+@media screen and (min-width:992px) and (max-width: 1200px){
+    .Maldives{
+        left: 15%;  
     }
-    /* .flex-container img{
-        width: 464px;
-    } */
+    .Indonesia{
+        right: 15%;  
+    }
+    .Srilanka{
+        left: 6%;  
+    }
+    .North-America{
+        left: 48%;  
+    }
+    .Kashmir{
+        right: 0%;  
+    }
+    .Bangladesh{
+        left: 9%;  
+    }
+    .Bandarban{
+        left: 68%;  
+    }
+    .box1 img{
+        max-width: 50%;
+        height: auto;
+    }
+    .box2 img{
+        max-width: 35%;
+        height: auto;
+    }
+    .box3 img{
+        max-width: 52%;
+        height: auto;
+    }
 }
