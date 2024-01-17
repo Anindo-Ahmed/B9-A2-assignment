@@ -145,8 +145,7 @@ input[type="button"]{
     line-height: 20px;
 }
 .tour ul{
-    padding-left: 5px;
-    
+    padding-left: 5px;  
 }
 .tour ul li{
     padding: 0px 43px 13px 5px;
@@ -182,8 +181,6 @@ input[type="button"]{
 .box1 img, .box2 img, .box3 img{
     width: 100%;
 }
-
-
 .Maldives{
     color: #fff;
     position: absolute;
@@ -306,6 +303,16 @@ input[type="button"]{
     text-align: center;
     padding-top: 10px;
 }
+
+/* Explore section style */
+
+video{
+    max-width: 40vw;
+    max-height: 400px;
+    border: 0;
+    border-radius: 16px;
+}
+
 /* Newsletter style */
 .newsletter{
     padding-top: 81px;
@@ -475,6 +482,9 @@ hr{
     }
     .pink{left: 0%;}
     .card-container p{width: fit-content;}
+    video{
+        width: fit-content;
+    }
     .newsletter{flex-direction: column;padding-top: 20px}
     .sign-in{
         padding: 20px ;
